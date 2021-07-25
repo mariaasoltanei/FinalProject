@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    android:layout_marginBottom="4dp">
+ <RelativeLayout
+     android:id="@+id/relative_layout_food"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_margin="8dp">
+
+     <TextView
+         android:id="@+id/food_name"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Food"
+         style="@style/TextViewFoodNormal"
+         android:layout_alignParentTop="true"/>
+
+
+     <TextView
+         android:id="@+id/food_brand"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/food_name"
+         style="@style/TextViewUnderFood"
+         android:text="Brand"/>
+
+     <TextView
+         android:id="@+id/food_quantity"
+         style="@style/TextViewUnderFood"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/food_name"
+         android:layout_toEndOf="@+id/food_brand"
+         android:paddingStart="16dp"
+         android:text="132g" />
+
+     <TextView
+         android:id="@+id/food_calories"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         style="@style/TextViewFoodNormal"
+         android:text="32"
+         android:layout_alignParentEnd="true"
+         android:layout_marginEnd="32dp"
+         android:layout_alignParentTop="true"
+         android:layout_marginTop="8dp"/>
+
+
+ </RelativeLayout>
+</androidx.cardview.widget.CardView>

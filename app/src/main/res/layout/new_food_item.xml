@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edit_food_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="8dp"
+        android:fontFamily="sans-serif-light"
+        android:hint="Enter food name"
+        android:inputType="textAutoComplete"
+        android:layout_margin="16dp"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/edit_food_brand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="8dp"
+        android:fontFamily="sans-serif-light"
+        android:hint="Enter food brand"
+        android:inputType="textAutoComplete"
+        android:layout_margin="16dp"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/edit_food_calorie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="8dp"
+        android:fontFamily="sans-serif-light"
+        android:hint="Enter food calories per 100g"
+        android:inputType="textAutoComplete"
+        android:layout_margin="16dp"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/edit_food_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="8dp"
+        android:fontFamily="sans-serif-light"
+        android:hint="Enter food quantity"
+        android:inputType="textAutoComplete"
+        android:layout_margin="16dp"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button_save_food"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menu_buttons"
+        android:text="Save"
+        android:layout_margin="16dp"
+        android:textColor="@color/black" />
+
+</LinearLayout>

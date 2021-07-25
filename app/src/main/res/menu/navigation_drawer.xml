@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/main_page"
+            android:icon="@drawable/ic_baseline_add_24"
+            android:title="@string/main_page" />
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_profile"
+            android:title="@string/my_profile" />
+        <item
+            android:id="@+id/goals"
+            android:icon="@drawable/ic_target"
+            android:title="@string/goals" />
+    </group>
+</menu>

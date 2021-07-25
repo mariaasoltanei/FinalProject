@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    android:layout_marginBottom="4dp">
+    <RelativeLayout
+        android:id="@+id/relative_layout_workout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/workout_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Workout"
+            style="@style/TextViewFoodNormal"
+            android:layout_alignParentTop="true"/>
+        <TextView
+            android:id="@+id/sets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SETS"
+            style="@style/TextViewWorkoutsSETS"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/workout_name"
+            android:layout_marginStart="32dp"/>
+
+        <TextView
+            android:id="@+id/workout_sets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:layout_below="@id/sets"
+            style="@style/TextViewUnderFood"
+            android:layout_toRightOf="@id/workout_name"
+            android:layout_marginStart="38dp"/>
+
+        <TextView
+            android:id="@+id/reps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REPS"
+            style="@style/TextViewWorkoutsSETS"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/sets"
+            android:layout_marginStart="32dp"
+            android:layout_toLeftOf="@id/workout_calories"/>
+
+        <TextView
+            android:id="@+id/workout_reps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15"
+            android:layout_below="@id/reps"
+            style="@style/TextViewUnderFood"
+            android:layout_toRightOf="@id/workout_sets"
+            android:layout_marginStart="48dp"
+            android:layout_toLeftOf="@id/workout_calories"/>
+
+        <TextView
+            android:id="@+id/workout_calories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextViewFoodNormal"
+            android:text="50"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="24dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8dp"/>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

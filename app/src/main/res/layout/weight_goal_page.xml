@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rectangle_green_stroke">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/jewel"
+        app:layout_constraintBottom_toTopOf="@id/guideline2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <TextView
+        android:id="@+id/text_view_weight_goals"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/rectangle_green_stroke"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline2"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="98dp" />
+
+    <TextView
+        android:id="@+id/starting_weight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Starting weight"
+        style="@style/TextViewBold"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_weight="0.5"
+        app:layout_constraintTop_toTopOf="@id/text_view_weight_goals"
+        app:layout_constraintBottom_toBottomOf="@id/starting_weight_change"
+        app:layout_constraintLeft_toLeftOf="@id/text_view_weight_goals"
+        app:layout_constraintRight_toLeftOf="@id/starting_weight_change"/>
+
+    <EditText
+        android:id="@+id/starting_weight_change"
+        android:layout_width="0dp"
+        android:inputType="number"
+        style="@style/TextviewStyle"
+        android:text="75"
+        android:textSize="24sp"
+        android:backgroundTint="@color/white"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_weight="0.5"
+        app:layout_constraintRight_toRightOf="@id/text_view_weight_goals"
+        app:layout_constraintTop_toTopOf="@id/text_view_weight_goals"
+        app:layout_constraintLeft_toRightOf="@id/starting_weight"
+        app:layout_constraintBottom_toBottomOf="@id/starting_weight" />
+
+    <TextView
+        android:id="@+id/current_weight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Current weight"
+        style="@style/TextViewBold"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_weight="0.5"
+        app:layout_constraintTop_toBottomOf="@id/starting_weight"
+        app:layout_constraintBottom_toBottomOf="@id/current_weight_change"
+        app:layout_constraintLeft_toLeftOf="@id/text_view_weight_goals"
+        app:layout_constraintRight_toLeftOf="@id/current_weight_change"/>
+
+    <EditText
+        android:id="@+id/current_weight_change"
+        android:layout_width="0dp"
+        android:layout_marginTop="8dp"
+        style="@style/TextviewStyle"
+        android:text="70"
+        android:inputType="number"
+        android:backgroundTint="@color/white"
+        android:textSize="24sp"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_weight="0.5"
+        app:layout_constraintRight_toRightOf="@id/text_view_weight_goals"
+        app:layout_constraintTop_toBottomOf="@id/starting_weight"
+        app:layout_constraintLeft_toRightOf="@id/current_weight"
+        app:layout_constraintBottom_toBottomOf="@id/current_weight" />
+
+    <TextView
+        android:id="@+id/goal_weight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Goal weight"
+        style="@style/TextViewBold"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_weight="0.5"
+        app:layout_constraintTop_toBottomOf="@id/current_weight"
+        app:layout_constraintBottom_toBottomOf="@id/goal_weight_change"
+        app:layout_constraintLeft_toLeftOf="@id/text_view_weight_goals"
+        app:layout_constraintRight_toLeftOf="@id/goal_weight_change"/>
+
+    <EditText
+        android:id="@+id/goal_weight_change"
+        android:layout_width="0dp"
+        android:layout_marginTop="8dp"
+        style="@style/TextviewStyle"
+        android:text="60"
+        android:inputType="number"
+        android:textSize="24sp"
+        android:backgroundTint="@color/white"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_weight="0.5"
+        app:layout_constraintRight_toRightOf="@id/text_view_weight_goals"
+        app:layout_constraintTop_toBottomOf="@id/current_weight"
+        app:layout_constraintLeft_toRightOf="@id/goal_weight"
+        app:layout_constraintBottom_toBottomOf="@id/goal_weight" />
+
+    <ProgressBar
+        android:id="@+id/weightProgressBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        app:layout_constraintTop_toBottomOf="@id/goal_weight"
+        android:padding="32dp"
+        app:layout_constraintLeft_toLeftOf="@id/text_view_weight_goals"
+        app:layout_constraintRight_toRightOf="@id/text_view_weight_goals"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/home_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/jewel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/save_changes"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/ic_home">
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/save_changes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/home_button"
+        android:background="@color/jewel"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/ic_baseline_check_24">
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
